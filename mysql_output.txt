@@ -1,0 +1,29 @@
+[vagrant@vm1 modules]$ sudo puppet agent --test
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_user]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_database]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_user/mysql.rb]/ensure: defined content as '{md5}3af9f573524a516e2ecd6d0830a92c62'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql.rb]/ensure: defined content as '{md5}881f4f76b084054f7299fe2de596e4c9'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_deepmerge.rb]/ensure: defined content as '{md5}2b5040ee8cd75a81cf881851e922833a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_password.rb]/ensure: defined content as '{md5}100a3fa5ccb4f50c96d7f5167d43737f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_strip_hash.rb]/ensure: defined content as '{md5}3efe69f1eb189b2913e178b8472aaede'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_plugin]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_plugin/mysql.rb]/ensure: defined content as '{md5}49128d2a9a547c4945735bfd75fd6d6c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_database/mysql.rb]/ensure: defined content as '{md5}5cf9b8044df4ec72a726b5f781c84f8f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/staging_parse.rb]/ensure: defined content as '{md5}cf6a6648b567b6efd3d0741e5f690ca8'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_grant]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_grant/mysql.rb]/ensure: defined content as '{md5}ab121816dd5a412e832418c8d8cf740c'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_dirname.rb]/ensure: defined content as '{md5}820ba09a6a0df639da560b41cb31242f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/scope_defaults.rb]/ensure: defined content as '{md5}da916d46f3ff3be8359f75c93c2b5532'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_plugin.rb]/ensure: defined content as '{md5}0a52cead6c9283c9aa14ea71bdfa80bd'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_database.rb]/ensure: defined content as '{md5}cf604db80326697fcece33013f116c02'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_grant.rb]/ensure: defined content as '{md5}d84de534270024e090dd536c5947fd25'
+Notice: /File[/var/lib/puppet/lib/facter/staging_http_get.rb]/ensure: defined content as '{md5}1f89d73e82135c4c9533119e2a95690d'
+Notice: /File[/var/lib/puppet/lib/facter/staging_windir.rb]/ensure: defined content as '{md5}6897a62c26ff15041cae6b62bf9b7a35'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_user.rb]/ensure: defined content as '{md5}7955d2cd382446966a6ee83e20806eaf'
+Info: Loading facts
+Info: Caching catalog for node1
+Info: Applying configuration version '1429965596'
+Notice: Finished catalog run in 3.43 seconds
+
