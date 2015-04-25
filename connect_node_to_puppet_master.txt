@@ -1,0 +1,19 @@
+[vagrant@vm1 puppet]$ ping puppet
+PING puppet (192.168.10.12) 56(84) bytes of data.
+64 bytes from puppet (192.168.10.12): icmp_seq=1 ttl=64 time=4.37 ms
+64 bytes from puppet (192.168.10.12): icmp_seq=2 ttl=64 time=2.97 ms
+64 bytes from puppet (192.168.10.12): icmp_seq=3 ttl=64 time=5.88 ms
+64 bytes from puppet (192.168.10.12): icmp_seq=4 ttl=64 time=32.8 ms
+64 bytes from puppet (192.168.10.12): icmp_seq=5 ttl=64 time=25.1 ms
+
+--- puppet ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4272ms
+rtt min/avg/max/mdev = 2.974/14.256/32.893/12.339 ms
+[vagrant@vm1 puppet]$ puppet agent -t
+Info: Caching certificate for ca
+Info: csr_attributes file loading from /home/vagrant/.puppet/csr_attributes.yaml
+Info: Creating a new SSL certificate request for vm1.minsk.epam.com
+Info: Certificate Request fingerprint (SHA256): F6:B5:AF:56:A8:90:1C:8D:25:EC:51:FA:5F:48:6C:01:0D:34:0E:68:A4:72:8D:AB:2F:34:01:2A:16:75:AF:DF
+Info: Caching certificate for ca
+Exiting; no certificate found and waitforcert is disabled
+[vagrant@vm1 puppet]$ 

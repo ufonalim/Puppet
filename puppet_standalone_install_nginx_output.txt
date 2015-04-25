@@ -1,0 +1,32 @@
+[root@vm1 puppet]# puppet apply /etc/puppet/manifests/test_manifest.pp 
+Notice: Compiled catalog for vm1.minsk.epam.com in environment production in 5.40 seconds
+Notice: /Stage[main]/Main/Package[nginx]/ensure: created
+Notice: Nginx is running.
+Notice: /Stage[main]/Main/Notify[Nginx is running.]/message: defined 'message' as 'Nginx is running.'
+Notice: Nginx is installed.
+Notice: /Stage[main]/Main/Notify[Nginx is installed.]/message: defined 'message' as 'Nginx is installed.'
+Notice: /Stage[main]/Main/Service[nginx]/ensure: ensure changed 'stopped' to 'running'
+Notice: Finished catalog run in 55.75 seconds
+[root@vm1 puppet]# pwd
+/etc/puppet
+[root@vm1 puppet]# cd manifests/
+[root@vm1 manifests]# ll
+total 8
+-rw-r--r-- 1 root root 165 Apr 24 18:38 test_manifest.pp
+[root@vm1 manifests]# vi test_manifest.pp 
+[root@vm1 manifests]# cat test_manifest.pp 
+package { 'nginx':
+        ensure=>'installed'
+}
+
+notify { 'Nginx is installed.':
+}
+
+service { 'nginx':
+        ensure=>'running'
+}
+
+notify { 'Nginx is running.':
+}
+[root@vm1 manifests]# 
+
