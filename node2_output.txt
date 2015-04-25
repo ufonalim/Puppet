@@ -1,0 +1,18 @@
+[vagrant@vm3 puppet]$ sudo puppet agent --test
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Loading facts
+Info: Caching catalog for node2
+Info: Applying configuration version '1429989326'
+Notice: Nginx is running.
+Notice: /Stage[main]/Nginx/Notify[Nginx is running.]/message: defined 'message' as 'Nginx is running.'
+Notice: Nginx is installed.
+Notice: /Stage[main]/Nginx/Notify[Nginx is installed.]/message: defined 'message' as 'Nginx is installed.'
+Notice: Finished catalog run in 15.89 seconds
+[vagrant@vm3 puppet]# /etc/init.d/nginx status
+nginx (pid  7478) is running...
+[vagrant@vm3 puppet]# /etc/init.d/mysqld status
+mysqld (pid 7087) is running...
+[vagrant@vm3 puppet]# 
+
+

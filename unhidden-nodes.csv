@@ -1,0 +1,40 @@
+name,status,resource_count,pending_count,failed_count,compliant_count,resource_type,title,evaluation_time,file,line,time,change_count,out_of_sync_count,skipped,failed
+node2,changed,27,0,0,27,Schedule,puppet,0.000561,,,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Anchor,mysql::client::end,0.000946,/etc/puppet/modules/mysql/manifests/client.pp,27,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,File,/var/log/mysqld.log,0.045224,/etc/puppet/modules/mysql/manifests/server/service.pp,17,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Service,mysqld,2.877499,/etc/puppet/modules/mysql/manifests/server/service.pp,25,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Mysql_user,prod_user@localhost,0.008378,,,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,File,/etc/my.cnf.d,0.025914,/etc/puppet/modules/mysql/manifests/server/config.pp,19,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Anchor,mysql::server::start,0.000876,/etc/puppet/modules/mysql/manifests/server.pp,63,2015-04-25 19:15 UTC,0,0,false,false
+node2,changed,27,0,0,27,Anchor,mysql::client::start,0.000937,/etc/puppet/modules/mysql/manifests/client.pp,25,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Anchor,mysql::db_prod_mdb::begin,0.000961,/etc/puppet/modules/mysql/manifests/db.pp,28,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Anchor,mysql::db_prod_mdb::end,0.000974,/etc/puppet/modules/mysql/manifests/db.pp,30,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Mysql_grant,prod_user@localhost/prod_mdb.*,0.003735,/etc/puppet/modules/mysql/manifests/db.pp,56,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Notify,Nginx is running.,0.053351,/etc/puppet/environments/prod/manifests/site.pp,11,2015-04-25 19:16 UTC,1,1,false,false
+node2,changed,27,0,0,27,Mysql_database,prod_mdb,0.02203,,,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Schedule,never,0.000824,,,2015-04-25 19:15 UTC,0,0,false,false
+node2,changed,27,0,0,27,Package,mysql_client,0.003385,/etc/puppet/modules/mysql/manifests/client/install.pp,9,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Schedule,monthly,0.000938,,,2015-04-25 19:15 UTC,0,0,false,false
+node2,changed,27,0,0,27,Package,nginx,0.008484,/etc/puppet/environments/prod/manifests/site.pp,4,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Filebucket,puppet,0.0022,,,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Schedule,daily,0.00109,,,2015-04-25 19:15 UTC,0,0,false,false
+node2,changed,27,0,0,27,Package,mysql-server,0.008716,/etc/puppet/modules/mysql/manifests/server/install.pp,10,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,File,mysql-config-file,0.050398,/etc/puppet/modules/mysql/manifests/server/config.pp,43,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Exec,mysql_install_db,0.001887,/etc/puppet/modules/mysql/manifests/server/install.pp,30,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Schedule,hourly,0.00091,,,2015-04-25 19:15 UTC,0,0,false,false
+node2,changed,27,0,0,27,Schedule,weekly,0.001839,,,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Service,nginx,0.999706,/etc/puppet/environments/prod/manifests/site.pp,9,2015-04-25 19:16 UTC,0,0,false,false
+node2,changed,27,0,0,27,Notify,Nginx is installed.,0.043019,/etc/puppet/environments/prod/manifests/site.pp,6,2015-04-25 19:16 UTC,1,1,false,false
+node2,changed,27,0,0,27,Anchor,mysql::server::end,0.001483,/etc/puppet/modules/mysql/manifests/server.pp,64,2015-04-25 19:16 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,puppet,0.00148,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Anchor,ntp::end,0.001548,/etc/puppet/modules/ntp/manifests/init.pp,62,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,monthly,0.000766,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,never,0.000672,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,daily,0.001998,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Filebucket,puppet,0.001641,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Anchor,ntp::begin,0.000958,/etc/puppet/modules/ntp/manifests/init.pp,58,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Package,ntp,0.006021,/etc/puppet/modules/ntp/manifests/install.pp,6,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,File,/etc/ntp.conf,0.021968,/etc/puppet/modules/ntp/manifests/config.pp,20,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Service,ntp,1.172025,/etc/puppet/modules/ntp/manifests/service.pp,15,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,hourly,0.000901,,,2015-04-25 17:58 UTC,0,0,false,false
+node1,unchanged,12,0,0,12,Schedule,weekly,0.000976,,,2015-04-25 17:58 UTC,0,0,false,false
