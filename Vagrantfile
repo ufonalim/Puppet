@@ -41,6 +41,14 @@ config.vm.define :vm3 do |vm3|
   vm3.vm.boot_timeout = 3000
 end
 
+#jboss_node
+config.vm.define :vm4 do |vm4|
+  vm4.vm.hostname = "jbossnode"
+  vm4.vm.network "private_network", ip: "192.168.10.14"
+  vm4.vm.network "forwarded_port", guest: 80, host: 8084
+  vm4.vm.boot_timeout = 3000
+end
+
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
